@@ -15,7 +15,7 @@ jobs:
       OSSRH_USERNAME: optsicom
       OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
       MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
-      GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
         - uses: actions/checkout@v2
 
